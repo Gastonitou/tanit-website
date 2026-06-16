@@ -9,12 +9,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-detail { position: relative; padding-left: 72px; }
+    .service-detail .service-icon { position: absolute; left: 0; top: 24px; width: 56px; height: 56px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .service-detail .service-icon svg { width: 28px; height: 28px; }
+    @media (max-width: 600px) { .service-detail { padding-left: 0; } .service-detail .service-icon { display: none; } }
+  </style>
 </head>
 <body>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo"><span>Tanit Physiotherapie</span></a>
+      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo" style="width:44px;height:44px;border-radius:50%;"><span>Tanit Physiotherapie</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Start</a></li>
@@ -27,36 +33,70 @@
     </div>
   </nav>
 
-  <section class="subpage-hero">
+  <section class="subpage-hero" style="background: linear-gradient(135deg, rgba(2,44,38,0.92), rgba(13,122,110,0.88)), url('images/practice/IMG-20220602-WA0030.jpg') center/cover no-repeat;">
     <div class="container">
       <h1>Naturheilkunde</h1>
       <p>Traditionelle Heilmethoden für ganzheitliche Gesundheit.</p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Intro -->
+  <section class="section" style="background: var(--bg-white);">
+    <div class="container section-center">
+      <p class="section-subtitle">Naturheilkunde</p>
+      <h2 class="section-title">Heilen mit der Kraft der Natur</h2>
+      <p class="section-desc">Schröpfen, Osteopathie und weitere traditionelle Verfahren – wir bringen Körper und Geist wieder in Einklang.</p>
+    </div>
     <div class="container">
-      <a href="/" class="back-link">← Zurück zur Startseite</a>
+      <div class="back-link-wrap" style="text-align: center; margin-bottom: 32px;">
+        <a href="/" class="back-link">&larr; Zurück zur Startseite</a>
+      </div>
+    </div>
+  </section>
 
-      <div class="service-detail" id="schropfen">
+  <!-- Services -->
+  <section class="section" style="padding-top: 0; background: var(--bg-white);">
+    <div class="container" style="max-width: 760px;">
+
+      <div class="service-detail" id="schröpfen">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M5 22c0-4 3-7 7-7s7 3 7 7"/></svg>
+        </div>
         <h2>Schröpfen</h2>
         <p class="service-meta">Eine der ältesten naturheilkundlichen Therapien</p>
         <p>Das Schröpfen ist eine der ältesten naturheilkundlichen Therapien, die heutzutage überwiegend zur Behandlung von Verspannungen, Verhärtungen und oder Durchblutungsstörungen zur Anwendung kommt. Ziel des Schröpfens ist es schädliche oder krankmachende Stoffe aus dem Körper zu entfernen. Man unterscheidet zwischen drei Verfahrensarten:</p>
         <ul>
-          <li><strong>Trockenschröpfen</strong> – Schröpfköpfe werden auf die zu behandelnden Stellen gesetzt und lösen einen Unterdruck aus, der den Blutfluss und die Lymphflüssigkeit anregt und dadurch die lokale Durchblutung der Haut- und Muskelschichten fördert. Dadurch können Verhärtungen gelöst werden.</li>
-          <li><strong>Blutiges Schröpfen</strong> – Vor dem Aufsetzen der Schröpfgefäße wird die Haut leicht eingeritzt, so dass das im Gewebe vorhandene Blut und somit auch die Schadstoffe austreten. Das Blut wird zudem leicht verdünnt, um die Fließfähigkeit zu erhöhen. Auch hier sorgt der erzeugte Unterdruck für eine verbesserte Blutzirkulation.</li>
-          <li><strong>Schröpfmassage</strong> – Die betroffenen Stellen werden mit Öl eingerieben und anschließend die Schröpfköpfe über die Haut gezogen, bis diese sich rötet. Ziel dieser Bindegewebemassage ist das Lösen von Verklebungen.</li>
+          <li><strong>Trockenschröpfen</strong> – Schröpfköpfe werden auf die zu behandelnden Stellen gesetzt und lösen einen Unterdruck aus, der den Blutfluß und die Lymphflüssigkeit anregt und dadurch die lokale Durchblutung der Haut- und Muskelschichten fördert. Dadurch können Verhärtungen gelöst werden.</li>
+          <li><strong>Blutiges Schröpfen</strong> – Vor dem Aufsetzen der Schröpfgefässe wird die Haut leicht eingeritzt, so dass das im Gewebe vorhandene Blut und somit auch die Schadstoffe austreten. Das Blut wird zudem leicht verdünnt, um die Fließfähigkeit zu erhöhen. Auch hier sorgt der erzeugte Unterdruck für eine verbesserte Blutzirkulation.</li>
+          <li><strong>Schröpfmassage</strong> – Die betroffenen Stellen werden mit Öl eingerieben und anschliessend die Schröpfköpfe über die Haut gezogen, bis diese sich rötet. Ziel dieser Bindegewebemassage ist das Lösen von Verklebungen.</li>
         </ul>
-        <a href="kontakt.html" class="btn btn-outline">Jetzt Termin vereinbaren →</a>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
 
+      <div style="text-align: center; margin: 16px 0 32px; color: var(--text-muted); font-size: 0.85rem;">&#9679; &#9679; &#9679;</div>
+
       <div class="service-detail" id="osteopathie">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h10z"/><path d="M9 3v18"/><path d="M17 9l-6-1"/><path d="M17 15l-6 1"/><path d="M17 12l-6"/></svg>
+        </div>
         <h2>Osteopathische Techniken</h2>
         <p class="service-meta">Ganzheitliche Diagnose und Behandlung mit den Händen</p>
-        <p>Die Osteopathie ist ein alternativmedizinisches Verfahren, dass nicht nur die einzelnen Symptome, sondern den gesamten Menschen betrachtet. Das Verfahren beruht auf der Annahme, dass Beschwerden und Erkrankungen auf Blockaden in der Muskulatur oder im Gewebe an anderer Stelle im Körper zurückzuführen sind.</p>
+        <p>Die Osteopathie ist ein alternativmedizinisches Verfahren, das nicht nur die einzelnen Symptome, sondern den gesamten Menschen betrachtet. Das Verfahren beruht auf der Annahme, dass Beschwerden und Erkrankungen auf Blockaden in der Muskulatur oder im Gewebe an anderer Stelle im Körper zurückzuführen sind.</p>
         <p>Der Osteopath spürt diese Blockaden durch Tasten, Drücken und Streichen auf und versucht diese ebenfalls mit den Händen zu lösen. Durch die Beseitigung der Blockaden soll der Körper wieder in einen harmonischen Fluss kommen und bestenfalls Selbstheilungskräfte anregen, die die Erkrankungen letztlich heilen können.</p>
-        <a href="kontakt.html" class="btn btn-primary">Jetzt Termin vereinbaren →</a>
+        <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren &rarr;</a>
       </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section contact-section">
+    <div class="container section-center">
+      <p class="section-subtitle" style="color: var(--accent);">Beratung & Termin</p>
+      <h2 class="section-title" style="color: white;">Vereinbaren Sie einen Termin</h2>
+      <p class="section-desc" style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 24px;">Rufen Sie uns an oder schreiben Sie uns – wir beraten Sie gerne zu unseren naturheilkundlichen Behandlungen.</p>
+      <a href="tel:03023290357" class="btn btn-accent" style="margin-right: 12px;">030 / 232 903 57</a>
+      <a href="kontakt.html" class="btn btn-outline-light">Termin anfragen &rarr;</a>
     </div>
   </section>
 
@@ -81,10 +121,9 @@
         <div>
           <h3><span>Kontakt</span></h3>
           <div class="contact-block">
-            <p>Sterndamm 73, 12487 Berlin</p>
             <p class="contact-phone">030 / 232 903 57</p>
             <p>praxis@tanit-physiotherapie-berlin.de</p>
-            <a href="kontakt.html" class="btn btn-primary" style="margin-top: 16px;">Termin anfragen →</a>
+            <a href="kontakt.html" class="btn btn-primary" style="margin-top: 16px;">Termin anfragen &rarr;</a>
           </div>
         </div>
       </div>

@@ -9,17 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .service-detail { position: relative; padding-left: 72px; }
+    .service-detail .service-icon { position: absolute; left: 0; top: 24px; width: 56px; height: 56px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .service-detail .service-icon svg { width: 28px; height: 28px; }
+    @media (max-width: 600px) { .service-detail { padding-left: 0; } .service-detail .service-icon { display: none; } }
+  </style>
 </head>
 <body>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo" style="width:44px;height:44px;border-radius:50%;">
-        <span>Tanit Physiotherapie</span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo" style="width:44px;height:44px;border-radius:50%;"><span>Tanit Physiotherapie</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu offnen"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Start</a></li>
         <li><a href="physiotherapie.html">Physiotherapie</a></li>
@@ -31,52 +33,101 @@
     </div>
   </nav>
 
-  <section class="subpage-hero">
+  <section class="subpage-hero" style="background: linear-gradient(135deg, rgba(2,44,38,0.92), rgba(13,122,110,0.88)), url('images/practice/IMG-20220602-WA0023.jpg') center/cover no-repeat;">
     <div class="container">
       <h1>Massagen</h1>
-      <p>Wohltuende Massagen für Entspannung, Regeneration und Wohlbefinden.</p>
+      <p>Wohltünde Massagen fur Entspannung, Regeneration und Wohlbefinden.</p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Intro -->
+  <section class="section" style="background: var(--bg-white);">
+    <div class="container section-center">
+      <p class="section-subtitle">Unsere Massagen</p>
+      <h2 class="section-title">Entspannung pur</h2>
+      <p class="section-desc">Ob klassische Massage, Lymphdrainage oder Faszientherapie – wir finden die richtige Behandlung fur Ihre Beschwerden.</p>
+    </div>
     <div class="container">
-      <a href="/" class="back-link">← Zurück zur Startseite</a>
+      <div class="back-link-wrap" style="text-align: center; margin-bottom: 32px;">
+        <a href="/" class="back-link">&larr; Zuruck zur Startseite</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" style="padding-top: 0; background: var(--bg-white);">
+    <div class="container" style="max-width: 760px;">
 
       <div class="service-detail" id="klassische-massage">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 5a3 3 0 0 1 3 3c0 .8-.3 1.5-.8 2l-3.7 3.7a3 3 0 0 1-4.2 0L8.8 10a3 3 0 0 1 0-4.2l3.7-3.7A3 3 0 0 1 17 5z"/><circle cx="10" cy="14" r="2"/><path d="M14 14l-5 5"/><path d="M5 17l4-4"/></svg>
+        </div>
         <h2>Klassische Massage</h2>
-        <p class="service-meta">Wohlfühlbehandlung für den gesamten Körper</p>
-        <p>Die klassische Massage dient einerseits zur Vorbeugung und Behandlung von Erkrankungen des Bewegungsapparates, andererseits auch als reine Wohlfühlbehandlung. Hierbei wird eine manuelle Beeinflussung der Haut, des tieferliegenden Gewebes und der Muskulatur vorgenommen. Die klassische Massage wird in der Regel sowohl als Ganzkörper- als auch als Teilbehandlung angeboten.</p>
-        <a href="kontakt.html" class="btn btn-outline">Jetzt Termin vereinbaren →</a>
+        <p class="service-meta">Wohlfuhlbehandlung fur den gesamten Korper</p>
+        <p>Die klassische Massage dient einerseits zur Vorbeugung und Behandlung von Erkrankungen des Bewegungsapparates, andererseits auch als reine Wohlfuhlbehandlung. Hierbei wird eine manülle Beeinflussung der Haut, des tieferliegenden Gewebes und der Muskulatur vorgenommen. Die klassische Massage wird in der Regel sowohl als Ganzkorper- als auch als Teilbehandlung angeboten.</p>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
+
+      <div style="text-align: center; margin: 16px 0 32px; color: var(--text-muted); font-size: 0.85rem;">&#9679; &#9679; &#9679;</div>
 
       <div class="service-detail" id="lymphdrainage">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
         <h2>Manuelle Lymphdrainage</h2>
         <p class="service-meta">Sanfte Entstauung des Gewebes</p>
-        <p>Die Lymphdrainage ist eine besondere Form der medizinischen Massage. Sanfte Grifftechniken regen dabei den Transport der Flüssigkeit in den Lymphgefäßen an, wodurch in erster Linie Gewebe entstaut und der Lymphfluß beschleunigt wird.</p>
-        <p>Ein weiterer positiver Effekt der manuellen Lymphdrainage sind das häufig von Patienten empfundene wohltuende und entspannende Gefühl, das durch die gleichmäßigen und sanften Bewegungen ausgelöst wird. Die Lymphdrainage wird häufig innerhalb der Behandlung von Lymph- und Lipödem-Patienten, sowie nach schweren orthopädischen Verletzungen oder Operationen angewandt, um Symptome wie Schwellungen und Schmerzen zu reduzieren.</p>
-        <a href="kontakt.html" class="btn btn-outline">Jetzt Termin vereinbaren →</a>
+        <p>Die Lymphdrainage ist eine besondere Form der medizinischen Massage. Sanfte Grifftechniken regen dabei den Transport der Flussigkeit in den Lymphgefassen an, wodurch in erster Linie Gewebe entstaut und der Lymphfluß beschleunigt wird.</p>
+        <p>Ein weiterer positiver Effekt der manüllen Lymphdrainage sind das haufig von Patienten empfundene wohltünde und entspannende Gefuhl, das durch die gleichmassigen und sanften Bewegungen ausgelost wird. Die Lymphdrainage wird haufig innerhalb der Behandlung von Lymph- und Lipodem-Patienten, sowie nach schweren orthopadischen Verletzungen oder Operationen angewandt, um Symptome wie Schwellungen und Schmerzen zu reduzieren.</p>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
+
+      <div style="text-align: center; margin: 16px 0 32px; color: var(--text-muted); font-size: 0.85rem;">&#9679; &#9679; &#9679;</div>
 
       <div class="service-detail" id="faszienmassage">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5c1.2-1.2 3-1.2 4.2 0l2 2c1.2 1.2 1.2 3 0 4.2l-10 10c-.4.4-1 .6-1.6.6H4v-5.1c0-.6.2-1.2.6-1.6l5-5"/><path d="M9 14l2-2"/></svg>
+        </div>
         <h2>Faszienmassage</h2>
-        <p class="service-meta">Lösung von Verhärtungen im Bindegewebe</p>
-        <p>Faszien sind die sehnenartige Oberhaut der Muskeln und umhüllen diese. Sie hängen eng mit dem Bewegungsapparat zusammen. Bei Bewegungsmangel, Falschbelastungen oder andere Faktoren können diese verhärten und zu Beschwerden führen. Hier kann man gezielt und therapeutisch entgegenwirken, um diese Verspannungen zu lösen. Je nach Schweregrad kann man hier auch mit speziellen Hilfsmitteln arbeiten.</p>
-        <a href="kontakt.html" class="btn btn-outline">Jetzt Termin vereinbaren →</a>
+        <p class="service-meta">Losung von Verhartungen im Bindegewebe</p>
+        <p>Faszien sind die sehnenartige Oberhaut der Muskeln und umhullen diese. Sie hangen eng mit dem Bewegungsapparat zusammen. Bei Bewegungsmangel, Fehlbelastungen oder anderen Faktoren konnen diese verharten und zu Beschwerden fuhren. Hier kann man gezielt und therapeutisch entgegenwirken, um diese Verspannungen zu losen. Je nach Schweregrad kann man hier auch mit speziellen Hilfsmitteln arbeiten.</p>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
+
+      <div style="text-align: center; margin: 16px 0 32px; color: var(--text-muted); font-size: 0.85rem;">&#9679; &#9679; &#9679;</div>
 
       <div class="service-detail" id="triggerpunkt">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
         <h2>Triggerpunktmassage</h2>
         <p class="service-meta">Gezielte Behandlung von Schmerzpunkten</p>
-        <p>Triggerpunkte sind Verhärtungen im Muskel, welche nicht ausreichend durchblutet werden. Hier entstehen oft Sammelpunkte für Schmerzen in einer bestimmten Körperregion. Es gibt verschiedene Techniken, um diese zu behandeln: hierzu zählen bestimmte Fingertechniken oder das Bearbeiten mit speziellen Holzutensilien.</p>
-        <a href="kontakt.html" class="btn btn-primary">Jetzt Termin vereinbaren →</a>
+        <p>Triggerpunkte sind Verhartungen im Muskel, welche nicht ausreichend durchblutet werden. Hier entstehen oft Sammelpunkte fur Schmerzen in einer bestimmten Korperregion. Es gibt verschiedene Techniken, um diese zu behandeln: hierzu zahlen bestimmte Fingertechniken oder das Bearbeiten mit speziellen Holzutensilien.</p>
+        <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren &rarr;</a>
       </div>
 
+      <div style="text-align: center; margin: 16px 0 32px; color: var(--text-muted); font-size: 0.85rem;">&#9679; &#9679; &#9679;</div>
+
       <div class="service-detail" id="fussreflex">
-        <h2>Fußreflexzonenmassage</h2>
-        <p class="service-meta">Ganzheitliche Behandlung über die Füße</p>
-        <p>Die Fußreflexzonenmassage ist eine bewährte Methode, bei der durch gezielte Druckmassage an den Füßen entsprechende Organe und Körperbereiche stimuliert werden. Eine wohltuende Behandlung, die zur Entspannung und zum allgemeinen Wohlbefinden beiträgt.</p>
-        <a href="kontakt.html" class="btn btn-outline">Jetzt Termin vereinbaren →</a>
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a4 4 0 0 1 6-3.5M14 3a4 4 0 0 1 4 4M20 13a4 4 0 0 1-3 5.5M7 21a4 4 0 0 1-3-3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h2>Fu&szlig;reflexzonenmassage</h2>
+        <p class="service-meta">Ganzheitliche Behandlung uber die Fu&szlig;e</p>
+        <p>Die Fu&szlig;reflexzonenmassage ist eine bewahrte Methode, bei der durch gezielte Druckmassage an den Fu&szlig;en entsprechende Organe und Korperbereiche stimuliert werden. Eine wohltünde Behandlung, die zur Entspannung und zum allgemeinen Wohlbefinden beitragt.</p>
+        <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section contact-section">
+    <div class="container section-center">
+      <p class="section-subtitle" style="color: var(--accent);">Beratung & Termin</p>
+      <h2 class="section-title" style="color: white;">Vereinbaren Sie einen Termin</h2>
+      <p class="section-desc" style="color: rgba(255,255,255,0.85); max-width: 500px; margin: 0 auto 24px;">Rufen Sie uns an oder schreiben Sie uns – wir beraten Sie gerne, welche Massage die richtige fur Sie ist.</p>
+      <a href="tel:03023290357" class="btn btn-accent" style="margin-right: 12px;">030 / 232 903 57</a>
+      <a href="kontakt.html" class="btn btn-outline-light">Termin anfragen &rarr;</a>
     </div>
   </section>
 
@@ -85,7 +136,7 @@
     <div class="container">
       <div class="info-strip">
         <div>
-          <h3><span>Öffnungs</span>zeiten</h3>
+          <h3><span>Offnungs</span>zeiten</h3>
           <div class="hours-grid">
             <div class="hours-row"><span class="hours-day">Montag</span><span class="hours-time">11:30 – 20:00 Uhr</span></div>
             <div class="hours-row"><span class="hours-day">Dienstag</span><span class="hours-time">08:00 – 16:00 Uhr</span></div>
@@ -93,14 +144,17 @@
             <div class="hours-row"><span class="hours-day">Donnerstag</span><span class="hours-time">08:00 – 16:00 Uhr</span></div>
             <div class="hours-row"><span class="hours-day">Freitag</span><span class="hours-time">nach Vereinbarung</span></div>
           </div>
+          <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15);">
+            <div style="font-weight: 500; font-size: 0.9rem; color: var(--accent);">Naturheilkunde Sprechzeiten:</div>
+            <div style="font-size: 0.9rem; margin-top: 4px; color: rgba(255,255,255,0.85);">Fr: 12:30 – 17:00 Uhr & nach Vereinbarung</div>
+          </div>
         </div>
         <div>
           <h3><span>Kontakt</span></h3>
           <div class="contact-block">
-            <p>Sterndamm 73, 12487 Berlin</p>
             <p class="contact-phone">030 / 232 903 57</p>
             <p>praxis@tanit-physiotherapie-berlin.de</p>
-            <a href="kontakt.html" class="btn btn-primary" style="margin-top: 16px;">Termin anfragen →</a>
+            <a href="kontakt.html" class="btn btn-primary" style="margin-top: 16px;">Termin anfragen &rarr;</a>
           </div>
         </div>
       </div>
@@ -110,24 +164,16 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <h4>Tanit Physiotherapie</h4>
-          <p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Köpenick.</p>
-        </div>
+        <div class="footer-brand"><h4>Tanit Physiotherapie</h4><p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Kopenick.</p></div>
         <div><h4>Leistungen</h4><ul class="footer-links"><li><a href="physiotherapie.html">Physiotherapie</a></li><li><a href="massage.html">Massagen</a></li><li><a href="naturheilkunde.html">Naturheilkunde</a></li></ul></div>
-        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Über uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Uber uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
         <div><h4>Kontakt</h4><ul class="footer-links"><li>Sterndamm 73, 12487 Berlin</li><li>030 / 232 903 57</li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 Tanit Physiotherapie Berlin</span>
-        <div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Tanit Physiotherapie Berlin</span><div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div>
     </div>
   </footer>
 
-  <a href="tel:03023290357" class="phone-float" aria-label="Anrufen">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-  </a>
+  <a href="tel:03023290357" class="phone-float" aria-label="Anrufen"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
 
   <script src="main.js"></script>
 </body>
