@@ -4,17 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturheilkunde Berlin | Tanit Physiotherapie</title>
-  <meta name="description" content="Schröpfen, blutiges Schröpfen & osteopathische Techniken in Berlin Treptow-Köpenick. Traditionelle Naturheilkunde bei Tanit Physiotherapie.">
+  <meta name="description" content="Schropfen, Osteopathie & ganzheitliche Therapien in Berlin Treptow-Kopenick. Traditionelle Naturheilkunde bei Tanit Physiotherapie.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .service-detail { position: relative; padding-left: 72px; }
-    .service-detail .service-icon { position: absolute; left: 0; top: 24px; width: 56px; height: 56px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-    .service-detail .service-icon svg { width: 28px; height: 28px; }
-    @media (max-width: 600px) { .service-detail { padding-left: 0; } .service-detail .service-icon { display: none; } }
-  </style>
 </head>
 <body>
 
@@ -36,55 +30,71 @@
   <section class="subpage-hero" style="background: linear-gradient(135deg, rgba(2,44,38,0.92), rgba(13,122,110,0.88)), url('images/practice/IMG-20220602-WA0030.jpg') center/cover no-repeat;">
     <div class="container">
       <h1>Naturheilkunde</h1>
-      <p>Traditionelle Heilmethoden für ganzheitliche Gesundheit.</p>
+      <p>Traditionelle Heilmethoden fur ganzheitliche Gesundheit.</p>
     </div>
   </section>
 
-  <!-- Intro -->
   <section class="section" style="background: var(--bg-white);">
     <div class="container section-center">
       <p class="section-subtitle">Naturheilkunde</p>
       <h2 class="section-title">Heilen mit der Kraft der Natur</h2>
-      <p class="section-desc">Schröpfen, Osteopathie und weitere traditionelle Verfahren – wir bringen Körper und Geist wieder in Einklang.</p>
+      <p class="section-desc">Schropfen, Osteopathie und weitere traditionelle Verfahren – wir bringen Korper und Geist wieder in Einklang.</p>
+      <a href="/" class="back-link" style="margin-bottom: 0;">&larr; Zuruck zur Startseite</a>
     </div>
+  </section>
+
+  <!-- Image Card Grid -->
+  <section class="section" style="padding-top: 0; background: var(--bg-white);">
     <div class="container">
-      <div class="back-link-wrap" style="text-align: center; margin-bottom: 32px;">
-        <a href="/" class="back-link">&larr; Zurück zur Startseite</a>
+      <div class="service-card-grid">
+
+        <div class="service-card" onclick="location.href='#schropfen'">
+          <div class="service-card-img">
+            <img src="images/practice/IMG-20220602-WA0035.jpg" alt="Schropfen" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Schropfen</h3>
+            <p>Eine der altesten naturheilkundlichen Therapien – Trockenschropfen, Blutiges Schropfen & Schröpfmassage.</p>
+            <span class="card-link">Mehr erfahren &rarr;</span>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="location.href='#osteopathie'">
+          <div class="service-card-img">
+            <img src="images/practice/04.jpg" alt="Osteopathie" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Osteopathische Techniken</h3>
+            <p>Ganzheitliche Diagnose und Behandlung mit den Handen – Blockaden spuren und losen.</p>
+            <span class="card-link">Mehr erfahren &rarr;</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="section" style="padding-top: 0; background: var(--bg-white);">
-    <div class="container" style="max-width: 760px;">
+  <!-- Detail Sections -->
+  <section class="section" style="padding-top: 0; background: var(--bg-dark);">
+    <div class="container">
 
-      <div class="service-detail" id="schröpfen">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M5 22c0-4 3-7 7-7s7 3 7 7"/></svg>
-        </div>
-        <h2>Schröpfen</h2>
-        <p class="service-meta">Eine der ältesten naturheilkundlichen Therapien</p>
-        <p>Das Schröpfen ist eine der ältesten naturheilkundlichen Therapien, die heutzutage überwiegend zur Behandlung von Verspannungen, Verhärtungen und oder Durchblutungsstörungen zur Anwendung kommt. Ziel des Schröpfens ist es schädliche oder krankmachende Stoffe aus dem Körper zu entfernen. Man unterscheidet zwischen drei Verfahrensarten:</p>
+      <div class="service-detail" id="schropfen">
+        <h2>Schröpfen</h2>
+        <p class="service-meta">Eine der altesten naturheilkundlichen Therapien</p>
+        <p>Das Schröpfen wird zur Behandlung von Verspannungen, Verhartungen und Durchblutungsstorungen eingesetzt. Ziel ist es, schadliche Stoffe aus dem Korper zu entfernen. Man unterscheidet drei Verfahren:</p>
         <ul>
-          <li><strong>Trockenschröpfen</strong> – Schröpfköpfe werden auf die zu behandelnden Stellen gesetzt und lösen einen Unterdruck aus, der den Blutfluß und die Lymphflüssigkeit anregt und dadurch die lokale Durchblutung der Haut- und Muskelschichten fördert. Dadurch können Verhärtungen gelöst werden.</li>
-          <li><strong>Blutiges Schröpfen</strong> – Vor dem Aufsetzen der Schröpfgefässe wird die Haut leicht eingeritzt, so dass das im Gewebe vorhandene Blut und somit auch die Schadstoffe austreten. Das Blut wird zudem leicht verdünnt, um die Fließfähigkeit zu erhöhen. Auch hier sorgt der erzeugte Unterdruck für eine verbesserte Blutzirkulation.</li>
-          <li><strong>Schröpfmassage</strong> – Die betroffenen Stellen werden mit Öl eingerieben und anschliessend die Schröpfköpfe über die Haut gezogen, bis diese sich rötet. Ziel dieser Bindegewebemassage ist das Lösen von Verklebungen.</li>
+          <li><strong>Trockenschröpfen</strong> – Schröpfkopfe erzeugen Unterdruck, der Blutfluss und Lymphfluss anregt und Verhartungen lost.</li>
+          <li><strong>Blutiges Schröpfen</strong> – Die Haut wird leicht eingeritzt, so dass Schadstoffe mit dem Blut austreten konnen.</li>
+          <li><strong>Schröpfmassage</strong> – Schröpfkopfe werden mit Ol uber die Haut gezogen, um Verklebungen im Bindegewebe zu losen.</li>
         </ul>
         <a href="kontakt.html" class="btn btn-outline">Termin vereinbaren &rarr;</a>
       </div>
 
-      <div style="margin: 32px 0; border-radius: var(--radius-sm); overflow: hidden; aspect-ratio: 16/9; background: var(--bg-dark-alt);">
-        <img src="images/practice/IMG-20220602-WA0031.jpg" alt="Tanit Naturheilkunde Praxis" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-
       <div class="service-detail" id="osteopathie">
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h10z"/><path d="M9 3v18"/><path d="M17 9l-6-1"/><path d="M17 15l-6 1"/><path d="M17 12l-6"/></svg>
-        </div>
         <h2>Osteopathische Techniken</h2>
-        <p class="service-meta">Ganzheitliche Diagnose und Behandlung mit den Händen</p>
-        <p>Die Osteopathie ist ein alternativmedizinisches Verfahren, das nicht nur die einzelnen Symptome, sondern den gesamten Menschen betrachtet. Das Verfahren beruht auf der Annahme, dass Beschwerden und Erkrankungen auf Blockaden in der Muskulatur oder im Gewebe an anderer Stelle im Körper zurückzuführen sind.</p>
-        <p>Der Osteopath spürt diese Blockaden durch Tasten, Drücken und Streichen auf und versucht diese ebenfalls mit den Händen zu lösen. Durch die Beseitigung der Blockaden soll der Körper wieder in einen harmonischen Fluss kommen und bestenfalls Selbstheilungskräfte anregen, die die Erkrankungen letztlich heilen können.</p>
+        <p class="service-meta">Ganzheitliche Diagnose und Behandlung mit den Handen</p>
+        <p>Die Osteopathie betrachtet nicht nur einzelne Symptome, sondern den gesamten Menschen. Blockaden in der Muskulatur oder im Gewebe werden durch Tasten, Drucken und Streichen aufgespurt und mit den Handen gelost.</p>
+        <p>Durch die Beseitigung der Blockaden soll der Korper wieder in einen harmonischen Fluss kommen und die Selbstheilungskrafte anregen.</p>
         <a href="kontakt.html" class="btn btn-primary">Termin vereinbaren &rarr;</a>
       </div>
 
@@ -102,42 +112,12 @@
     </div>
   </section>
 
-  <!-- Info Strip -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="info-strip">
-        <div>
-          <h3><span>Öffnungs</span>zeiten</h3>
-          <div class="hours-grid">
-            <div class="hours-row"><span class="hours-day">Montag</span><span class="hours-time">11:30 – 20:00 Uhr</span></div>
-            <div class="hours-row"><span class="hours-day">Dienstag</span><span class="hours-time">08:00 – 16:00 Uhr</span></div>
-            <div class="hours-row"><span class="hours-day">Mittwoch</span><span class="hours-time">11:30 – 20:00 Uhr</span></div>
-            <div class="hours-row"><span class="hours-day">Donnerstag</span><span class="hours-time">08:00 – 16:00 Uhr</span></div>
-            <div class="hours-row"><span class="hours-day">Freitag</span><span class="hours-time">nach Vereinbarung</span></div>
-          </div>
-          <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.15);">
-            <div style="font-weight: 500; font-size: 0.9rem; color: var(--accent);">Naturheilkunde Sprechzeiten:</div>
-            <div style="font-size: 0.9rem; margin-top: 4px; color: rgba(255,255,255,0.85);">Fr: 12:30 – 17:00 Uhr & nach Vereinbarung</div>
-          </div>
-        </div>
-        <div>
-          <h3><span>Kontakt</span></h3>
-          <div class="contact-block">
-            <p class="contact-phone">030 / 232 903 57</p>
-            <p>praxis@tanit-physiotherapie-berlin.de</p>
-            <a href="kontakt.html" class="btn btn-primary" style="margin-top: 16px;">Termin anfragen &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><h4>Tanit Physiotherapie</h4><p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Köpenick.</p></div>
+        <div class="footer-brand"><h4>Tanit Physiotherapie</h4><p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Kopenick.</p></div>
         <div><h4>Leistungen</h4><ul class="footer-links"><li><a href="physiotherapie.html">Physiotherapie</a></li><li><a href="massage.html">Massagen</a></li><li><a href="naturheilkunde.html">Naturheilkunde</a></li></ul></div>
-        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Über uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Uber uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
         <div><h4>Kontakt</h4><ul class="footer-links"><li>Sterndamm 73, 12487 Berlin</li><li>030 / 232 903 57</li></ul></div>
       </div>
       <div class="footer-bottom"><span>&copy; 2026 Tanit Physiotherapie Berlin</span><div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div>
