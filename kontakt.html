@@ -158,33 +158,41 @@
         <p class="section-desc" style="color: var(--text-on-dark-muted);">Zentral in Berlin-Treptow gelegen und gut mit Bus & Bahn erreichbar.</p>
       </div>
 
-      <div style="margin-top: 24px; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius); overflow: hidden;">
+      <div style="margin-top: 24px;">
 
-        <div style="aspect-ratio: 16/9; min-height: 350px; position: relative;">
+        <!-- Google Maps -->
+        <div style="aspect-ratio: 16/9; min-height: 400px; border-radius: var(--radius); overflow: hidden; position: relative;">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9700!2d13.5062634!3d52.4460339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84fb3ad79bdf1%3A0x3280454b7a68a0c!2sSterndamm%2073%2C%2012487%20Berlin!5e0!3m2!1sde!2sde!4v1"
             width="100%" height="100%" style="border:0; position: absolute; top: 0; left: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="Google Maps - Tanit Physiotherapie Berlin - Sterndamm 73">
           </iframe>
-          <div style="position: absolute; top: 16px; left: 16px; background: rgba(15,20,25,0.9); padding: 16px 20px; border-radius: var(--radius-sm); backdrop-filter: blur(8px);">
-            <p style="color: white; font-weight: 700; font-size: 1rem;">Tanit Physiotherapie</p>
-            <p style="color: var(--accent); font-size: 0.9rem;">Sterndamm 73, 12487 Berlin</p>
+
+          <!-- Uber der Karte -->
+          <div style="position: absolute; top: 20px; left: 20px; background: rgba(15,20,25,0.92); padding: 18px 22px; border-radius: var(--radius-sm);">
+            <p style="color: white; font-weight: 700; font-size: 1.2rem;">Tanit Physiotherapie</p>
+            <p style="color: var(--accent);">Sterndamm 73, 12487 Berlin</p>
           </div>
+
+          <!-- Routen-Button uber der Karte -->
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Sterndamm+73,+12487+Berlin" target="_blank" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--bg-dark); padding: 16px 36px; border-radius: 50px; font-weight: 700; font-size: 1.1rem; text-decoration: none; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Route mit Google Maps
+          </a>
         </div>
 
-        <div style="padding: 20px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-dark);">
-          <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
-            <span style="background: var(--accent); color: var(--bg-dark); padding: 4px 12px; border-radius: 4px; font-weight: 700; font-size: 0.85rem;">M60 M61</span>
-            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">Station: Sterndamm / Konigsheideweg</span>
-            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">|</span>
-            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">S Schoneweide: 900m</span>
-            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">|</span>
-            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">1. OG · Aufzug</span>
+        <!-- Info unter der Karte -->
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; justify-content: center;">
+          <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: 1px solid var(--border-dark); padding: 10px 16px; border-radius: 50px;">
+            <span style="background: var(--accent); color: var(--bg-dark); padding: 2px 10px; border-radius: 4px; font-weight: 700; font-size: 0.85rem;">M60 M61</span>
+            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">Sterndamm / Konigsheideweg</span>
           </div>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Sterndamm+73,+12487+Berlin" target="_blank" style="display: flex; align-items: center; gap: 6px; background: var(--accent); color: var(--bg-dark); padding: 10px 20px; border-radius: 50px; font-weight: 600; font-size: 0.85rem; text-decoration: none;">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Route &rarr;
-          </a>
+          <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: 1px solid var(--border-dark); padding: 10px 16px; border-radius: 50px;">
+            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">S Schoneweide: 900m</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; background: var(--bg-card); border: 1px solid var(--border-dark); padding: 10px 16px; border-radius: 50px;">
+            <span style="color: var(--text-on-dark-muted); font-size: 0.9rem;">1. OG · Aufzug barrierefrei</span>
+          </div>
         </div>
 
       </div>
