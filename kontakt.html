@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt | Tanit Physiotherapie Berlin</title>
-  <meta name="description" content="Kontaktieren Sie Tanit Physiotherapie in Berlin Treptow-Köpenick. Telefon, E-Mail, Anfahrt und Kontaktformular.">
+  <title>Kontakt & Termin | Tanit Physiotherapie Berlin</title>
+  <meta name="description" content="Kontaktieren Sie Tanit Physiotherapie in Berlin Treptow-Kopenick. Telefon, E-Mail, Anfahrt und Kontaktformular.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo"><span>Tanit Physiotherapie</span></a>
+      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo" style="width:44px;height:44px;border-radius:50%;"><span>Tanit Physiotherapie</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="/">Start</a></li>
@@ -27,60 +27,97 @@
     </div>
   </nav>
 
-  <section class="subpage-hero">
+  <section class="subpage-hero" style="background: linear-gradient(135deg, rgba(2,44,38,0.92), rgba(13,122,110,0.88)), url('images/practice/IMG-20220602-WA0002.jpg') center/cover no-repeat;">
     <div class="container">
       <h1>Kontakt & Termin</h1>
       <p>Vereinbaren Sie einen Termin oder stellen Sie uns Ihre Fragen.</p>
     </div>
   </section>
 
-  <section class="section">
+  <!-- Kontakt + Formular -->
+  <section class="section" style="background: var(--bg-white);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+      <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: start;">
+
+        <!-- Linke Spalte: Kontaktdaten -->
         <div>
-          <h2 style="color: var(--primary); margin-bottom: 1rem;">Terminvereinbarung</h2>
-          <p style="color: var(--text-light); margin-bottom: 1rem;">Rufen Sie uns an oder nutzen Sie unser Kontaktformular. Wir melden uns umgehend bei Ihnen zurück.</p>
+          <p class="section-subtitle" style="text-align: left;">Kontakt</p>
+          <h2 style="color: white;">So erreichen Sie uns</h2>
 
-          <div style="background: var(--primary); border-radius: var(--radius); padding: 30px; color: white; margin-top: 20px;">
-            <p style="font-size: 0.9rem; opacity: 0.85;">Telefon:</p>
-            <p style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 20px;">030 / 232 903 57</p>
+          <div style="margin-top: 24px; display: grid; gap: 16px;">
+            <!-- Telefon -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 20px;">
+              <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-on-dark-muted); margin-bottom: 4px;">Telefon</p>
+              <a href="tel:03023290357" style="font-size: 1.6rem; font-weight: 700; color: var(--accent); text-decoration: none;">030 / 232 903 57</a>
+            </div>
+            <!-- E-Mail -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 20px;">
+              <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-on-dark-muted); margin-bottom: 4px;">E-Mail</p>
+              <p style="font-size: 1.1rem; color: white;">praxis@tanit-physiotherapie-berlin.de</p>
+            </div>
+            <!-- Adresse -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 20px;">
+              <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-on-dark-muted); margin-bottom: 4px;">Adresse</p>
+              <p style="font-size: 1.1rem; color: white;">Sterndamm 73<br>12487 Berlin</p>
+              <p style="font-size: 0.9rem; color: var(--text-on-dark-muted); margin-top: 4px;">1. Etage, barrierefrei mit Aufzug</p>
+            </div>
+            <!-- Sprachen -->
+            <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-sm); padding: 20px;">
+              <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-on-dark-muted); margin-bottom: 4px;">Sprachen</p>
+              <p style="color: white;">Deutsch · Englisch · Franzosisch · Arabisch</p>
+            </div>
+          </div>
 
-            <p style="font-size: 0.9rem; opacity: 0.85;">E-Mail:</p>
-            <p style="font-size: 1.1rem;">praxis@tanit-physiotherapie-berlin.de</p>
-
-            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.15);">
-              <p style="font-weight: 600; color: var(--accent);">Öffnungszeiten</p>
-              <div style="display: grid; gap: 4px; margin-top: 8px; font-size: 0.9rem;">
-                <div style="display: flex; justify-content: space-between;"><span>Mo</span><span>11:30 – 20:00</span></div>
-                <div style="display: flex; justify-content: space-between;"><span>Di</span><span>08:00 – 16:00</span></div>
-                <div style="display: flex; justify-content: space-between;"><span>Mi</span><span>11:30 – 20:00</span></div>
-                <div style="display: flex; justify-content: space-between;"><span>Do</span><span>08:00 – 16:00</span></div>
-                <div style="display: flex; justify-content: space-between;"><span>Fr</span><span>nach Vereinbarung</span></div>
+          <!-- Offnungszeiten -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius); padding: 28px; margin-top: 20px;">
+            <h3 style="color: var(--accent); font-family: 'Inter', sans-serif; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;">Offnungszeiten</h3>
+            <div style="display: grid; gap: 6px; margin-top: 16px;">
+              <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border-dark);">
+                <span style="color: white;">Montag</span><span style="color: var(--text-on-dark-muted);">11:30 – 20:00 Uhr</span>
               </div>
+              <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border-dark);">
+                <span style="color: white;">Dienstag</span><span style="color: var(--text-on-dark-muted);">08:00 – 16:00 Uhr</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border-dark);">
+                <span style="color: white;">Mittwoch</span><span style="color: var(--text-on-dark-muted);">11:30 – 20:00 Uhr</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid var(--border-dark);">
+                <span style="color: white;">Donnerstag</span><span style="color: var(--text-on-dark-muted);">08:00 – 16:00 Uhr</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding: 4px 0;">
+                <span style="color: white;">Freitag</span><span style="color: var(--text-on-dark-muted);">nach Vereinbarung</span>
+              </div>
+            </div>
+            <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
+              <p style="font-size: 0.85rem; color: var(--text-on-dark-muted);">Naturheilkunde: Fr 12:30 – 17:00 Uhr & nach Vereinbarung</p>
             </div>
           </div>
         </div>
 
+        <!-- Rechte Spalte: Formular -->
         <div>
-          <h2 style="color: var(--primary); margin-bottom: 1rem;">Schreiben Sie uns</h2>
-          <form class="contact-form" id="contactForm" style="margin-top: 8px;">
-            <div class="form-grid" >
+          <p class="section-subtitle" style="text-align: left;">Termin anfragen</p>
+          <h2 style="color: white;">Schreiben Sie uns</h2>
+          <p style="color: var(--text-on-dark-muted); margin-bottom: 24px;">Wir melden uns umgehend bei Ihnen zuruck.</p>
+
+          <form class="contact-form" id="contactForm" style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius); padding: 32px;">
+            <div class="form-grid">
               <div class="form-group">
-                <label for="vorname" style="color: var(--text);">Vorname *</label>
-                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;">
+                <label for="vorname">Vorname *</label>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
               </div>
               <div class="form-group">
-                <label for="nachname" style="color: var(--text);">Nachname *</label>
-                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;">
+                <label for="nachname">Nachname *</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required>
               </div>
               <div class="form-group full-width">
-                <label for="email" style="color: var(--text);">E-Mail *</label>
-                <input type="email" id="email" name="email" placeholder="ihre-email@example.com" required style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" placeholder="ihre-email@example.com" required>
               </div>
               <div class="form-group full-width">
-                <label for="dienstleistung" style="color: var(--text);">Dienstleistung</label>
-                <select id="dienstleistung" name="dienstleistung" style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;">
-                  <option value="">– Bitte wählen –</option>
+                <label for="dienstleistung">Dienstleistung</label>
+                <select id="dienstleistung" name="dienstleistung">
+                  <option value="">– Bitte wahlen –</option>
                   <option value="physiotherapie">Physiotherapie</option>
                   <option value="massage">Massage</option>
                   <option value="naturheilkunde">Naturheilkunde</option>
@@ -88,57 +125,94 @@
                 </select>
               </div>
               <div class="form-group full-width">
-                <label for="telefon" style="color: var(--text);">Telefon (für Rückfragen)</label>
-                <input type="tel" id="telefon" name="telefon" placeholder="z.B. 030 123456" style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;">
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="z.B. 030 123456">
               </div>
               <div class="form-group full-width">
-                <label for="nachricht" style="color: var(--text);">Nachricht *</label>
-                <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Nachricht an uns..." required style="border-color: rgba(255,255,255,0.15); background: rgba(255,255,255,0.06); color: white;"></textarea>
+                <label for="nachricht">Nachricht *</label>
+                <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Nachricht an uns..." required></textarea>
               </div>
             </div>
 
-            <div class="form-checkbox" style="color: var(--text-light); margin-top: 16px;">
-              <input type="checkbox" id="datenschutz" required style="width: auto;">
-              <label for="datenschutz">Ich bin einverstanden, dass meine Daten zur Weiterverarbeitung und Kontaktaufnahme gemäß der <a href="datenschutz.html">Datenschutzbestimmungen</a> verwendet und gespeichert werden dürfen. *</label>
+            <div class="form-checkbox" style="margin-top: 16px;">
+              <input type="checkbox" id="datenschutz" required>
+              <label for="datenschutz">Ich bin einverstanden, dass meine Daten zur Weiterverarbeitung und Kontaktaufnahme gemass der <a href="datenschutz.html">Datenschutzbestimmungen</a> verwendet und gespeichert werden durfen. *</label>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="margin-top: 20px; width: 100%; justify-content: center;">
-              Anfrage senden →
+            <button type="submit" class="btn btn-accent" style="margin-top: 20px; width: 100%; justify-content: center;">
+              Anfrage senden &rarr;
             </button>
           </form>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Anfahrt -->
+  <section class="section" style="padding-top: 0; background: var(--bg-white);">
+    <div class="container">
+      <div class="section-center">
+        <p class="section-subtitle">Anfahrt</p>
+        <h2 class="section-title" style="color: white;">Hier finden Sie uns</h2>
+        <p class="section-desc" style="color: var(--text-on-dark-muted);">Wir sind zentral in Berlin-Treptow gelegen und gut mit offentlichen Verkehrsmitteln erreichbar.</p>
       </div>
 
-      <!-- Anfahrt -->
-      <div id="anfahrt" style="background: var(--primary-light); border-radius: var(--radius); padding: 40px;">
-        <h3 style="color: var(--primary);">Anfahrt</h3>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
-          <div>
-            <p style="font-weight: 600;">Adresse:</p>
-            <p style="color: var(--text-light);">Sterndamm 73<br>12487 Berlin</p>
-            <p style="font-weight: 600; margin-top: 12px;">Öffentliche Verkehrsmittel:</p>
-            <p style="color: var(--text-light);">Tram M60, M61 – Station: Sterndamm/Königsheideweg<br>900m vom S-Bahnhof Schöneweide</p>
-            <p style="color: var(--text-light); margin-top: 8px;">Wir befinden uns in der <strong>1. Etage</strong>.</p>
-          </div>
-          <div>
-            <p style="font-weight: 600;">Sprachen:</p>
-            <p style="color: var(--text-light);">Deutsch, Englisch, Französisch, Arabisch</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius); padding: 32px;">
+          <h3 style="color: var(--accent); margin-bottom: 16px;">Adresse</h3>
+          <p style="color: white; font-size: 1.2rem; font-weight: 600;">Sterndamm 73</p>
+          <p style="color: var(--text-on-dark-muted); font-size: 1.1rem; margin-bottom: 20px;">12487 Berlin</p>
+
+          <div style="border-top: 1px solid var(--border-dark); padding-top: 20px;">
+            <h4 style="color: white; font-family: 'Inter', sans-serif; font-size: 0.9rem; margin-bottom: 12px;">Offentliche Verkehrsmittel</h4>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+              <span style="background: var(--accent); color: var(--bg-dark); padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 0.8rem;">M60 M61</span>
+              <span style="color: var(--text-on-dark-muted);">Station: Sterndamm / Konigsheideweg</span>
+            </div>
+            <p style="color: var(--text-on-dark-muted); font-size: 0.9rem;"><strong style="color: white;">S-Bahn:</strong> S Schoneweide (900m Fussweg)</p>
+            <p style="color: var(--text-on-dark-muted); font-size: 0.9rem; margin-top: 8px;"><strong style="color: white;">Etage:</strong> 1. OG, Aufzug vorhanden (barrierefrei)</p>
           </div>
         </div>
-        <div style="margin-top: 20px; background: var(--border); border-radius: var(--radius-sm); height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem; flex-direction: column; gap: 8px;">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Karte: Sterndamm 73, 12487 Berlin</span>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.5!2d13.49!3d52.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI3JzAwLjAiTiAxM8KwMjknMjQuMCJF!5e0!3m2!1sde!2sde!4v1!4m5!1s0x47a84f4f4f4f4f4f%3A0x4f4f4f4f4f4f4f4f!2sSterndamm%2073%2C%2012487%20Berlin!3m2!1d52.456389!2d13.494722"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps - Tanit Physiotherapie Berlin">
+          </iframe>
         </div>
       </div>
+
+      <div style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Sterndamm+73,+12487+Berlin" target="_blank" class="btn btn-accent">
+          Route mit Google Maps &rarr;
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tanit+Physiotherapie+Sterndamm+73+Berlin" target="_blank" class="btn btn-outline">
+          Bei Google Maps ansehen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section contact-section">
+    <div class="container section-center">
+      <p class="section-subtitle" style="color: var(--accent);">Wir freuen uns auf Sie</p>
+      <h2 class="section-title" style="color: white;">Noch Fragen? Rufen Sie an</h2>
+      <p class="section-desc" style="color: rgba(255,255,255,0.85);">Vereinbaren Sie gleich telefonisch Ihren Termin.</p>
+      <a href="tel:03023290357" class="btn btn-accent" style="font-size: 1.2rem; padding: 16px 40px;">
+        030 / 232 903 57
+      </a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><h4>Tanit Physiotherapie</h4><p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Köpenick.</p></div>
+        <div class="footer-brand"><h4>Tanit Physiotherapie</h4><p>Ganzheitliche Physiotherapie und Naturheilkunde in Berlin Treptow-Kopenick.</p></div>
         <div><h4>Leistungen</h4><ul class="footer-links"><li><a href="physiotherapie.html">Physiotherapie</a></li><li><a href="massage.html">Massagen</a></li><li><a href="naturheilkunde.html">Naturheilkunde</a></li></ul></div>
-        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Über uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+        <div><h4>Praxis</h4><ul class="footer-links"><li><a href="praxis.html">Uber uns</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
         <div><h4>Kontakt</h4><ul class="footer-links"><li>Sterndamm 73, 12487 Berlin</li><li>030 / 232 903 57</li></ul></div>
       </div>
       <div class="footer-bottom"><span>&copy; 2026 Tanit Physiotherapie Berlin</span><div class="footer-bottom-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div>
