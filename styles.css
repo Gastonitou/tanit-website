@@ -533,7 +533,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 0.75rem; }
   margin-bottom: 6px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-on-dark-muted);
+  color: #222222;
 }
 
 .form-group select option { color: var(--text); background: var(--bg-card); }
@@ -544,16 +544,16 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 0.75rem; }
   width: 100%;
   padding: 14px 18px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-dark);
-  background: rgba(255,255,255,0.05);
-  color: white;
+  border: 1px solid rgba(255,60,172,0.3);
+  background: #FFFFFF;
+  color: #222222;
   font-size: 1rem;
   font-family: inherit;
   transition: var(--transition);
 }
 
 .form-group input::placeholder,
-.form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+.form-group textarea::placeholder { color: #999999; }
 
 .form-group input:focus,
 .form-group select:focus,
@@ -572,7 +572,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 0.75rem; }
   align-items: flex-start;
   gap: 10px;
   font-size: 0.85rem;
-  color: var(--text-on-dark-muted);
+  color: #222222;
   margin-top: 8px;
 }
 
