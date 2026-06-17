@@ -14,10 +14,10 @@
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo"><span>Tanit Physiotherapie</span></a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Tanit Physiotherapie Logo"><span>Tanit Physiotherapie</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="/">Start</a></li>
+        <li><a href="index.html">Start</a></li>
         <li><a href="physiotherapie.html">Physiotherapie</a></li>
         <li><a href="massage.html">Massagen</a></li>
         <li><a href="naturheilkunde.html">Naturheilkunde</a></li>
@@ -36,7 +36,7 @@
 
   <section class="section">
     <div class="container">
-      <a href="/" class="back-link">← Zurück zur Startseite</a>
+      <a href="index.html" class="back-link">← Zurück zur Startseite</a>
 
       <div class="about-grid" style="margin-bottom: 60px;">
         <div>
@@ -44,8 +44,8 @@
           <p style="color: var(--text-light); margin-bottom: 1rem; line-height: 1.7;">Wir sind eine Physiotherapiepraxis in Berlin Treptow-Köpenick mit dem Fokus auf Naturheilkunde. Bei uns arbeiten ausgebildete Physiotherapeuten und Naturheilpraktiker, die Sie <strong>ganzheitlich</strong> behandeln – damit Geist, Seele und Körper ins Gleichgewicht finden.</p>
           <p style="color: var(--text-light); margin-bottom: 1rem; line-height: 1.7;">Unser Ansatz vereint moderne physiotherapeutische Methoden mit traditioneller Naturheilkunde. Wir behandeln nicht nur Symptome, sondern suchen nach der Ursache Ihrer Beschwerden.</p>
           <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 24px;">
-            <div style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.4rem; opacity: 0.6;">&#9864;</span> <span style="color: var(--text-light); font-size: 0.95rem;">Deutsch, Englisch, Französisch, Arabisch</span></div>
-            <div style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.4rem; opacity: 0.6;">&#9864;</span> <span style="color: var(--text-light); font-size: 0.95rem;">1. Etage, Aufzug vorhanden</span></div>
+            <div style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.1rem; color: var(--primary);">&#10003;</span> <span style="color: var(--text-light); font-size: 0.95rem;">Deutsch, Englisch, Französisch, Arabisch</span></div>
+            <div style="display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.1rem; color: var(--primary);">&#10003;</span> <span style="color: var(--text-light); font-size: 0.95rem;">1. Etage, Aufzug vorhanden</span></div>
           </div>
         </div>
         <div class="about-image">
@@ -61,24 +61,28 @@
       </div>
 
       <!-- Anfahrt -->
-      <div style="background: var(--primary-light); border-radius: var(--radius); padding: 40px; margin-bottom: 24px;">
+      <div style="background: var(--primary-light); border-radius: var(--radius); padding: 40px; margin-bottom: 24px; color: var(--primary-dark);">
         <h3 style="color: var(--primary);">Anfahrt</h3>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
           <div>
-            <p style="font-weight: 600;">Adresse:</p>
-            <p style="color: var(--text-light);">Sterndamm 73<br>12487 Berlin</p>
-            <p style="font-weight: 600; margin-top: 12px;">Öffentliche Verkehrsmittel:</p>
-            <p style="color: var(--text-light);">Tram M60, M61 – Station: Sterndamm/Königsheideweg<br>900m vom S-Bahnhof Schöneweide</p>
+            <p style="font-weight: 600; color: var(--primary-dark);">Adresse:</p>
+            <p style="color: rgba(6,74,66,0.82);">Sterndamm 73<br>12487 Berlin</p>
+            <p style="font-weight: 600; margin-top: 12px; color: var(--primary-dark);">Öffentliche Verkehrsmittel:</p>
+            <p style="color: rgba(6,74,66,0.82);">Tram M60, M61 – Station: Sterndamm/Königsheideweg<br>900m vom S-Bahnhof Schöneweide</p>
           </div>
           <div>
-            <p style="font-weight: 600;">Hinweise:</p>
-            <p style="color: var(--text-light);">Wir befinden uns in der <strong>1. Etage</strong>. Der Zugang ist barrierefrei über den Aufzug möglich.</p>
+            <p style="font-weight: 600; color: var(--primary-dark);">Hinweise:</p>
+            <p style="color: rgba(6,74,66,0.82);">Wir befinden uns in der <strong>1. Etage</strong>. Der Zugang ist barrierefrei über den Aufzug möglich.</p>
           </div>
         </div>
-        <!-- Google Maps placeholder -->
-        <div style="margin-top: 20px; background: var(--border); border-radius: var(--radius-sm); height: 200px; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.9rem; flex-direction: column; gap: 8px;">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Karte: Sterndamm 73, 12487 Berlin</span>
+        <!-- Google Maps embed -->
+        <div style="margin-top: 20px; border-radius: var(--radius-sm); overflow: hidden; height: 220px;">
+          <iframe
+            src="https://maps.google.com/maps?q=Sterndamm+73,+12487+Berlin&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="220" style="border:0; display:block;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Standort Tanit Physiotherapie Berlin">
+          </iframe>
         </div>
       </div>
 
